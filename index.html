@@ -17,17 +17,45 @@
         <h1>This is my header no banner</h1>
     </header>
     <main>
-        <h1>wellcome to my dom</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aliquam magnam dicta suscipit, consequuntur porro deserunt reiciendis non fugiat reprehenderit quod unde ad iusto iste facilis sapiente veritatis molestias illo!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aliquam magnam dicta suscipit, consequuntur porro deserunt reiciendis non fugiat reprehenderit quod unde ad iusto iste facilis sapiente veritatis molestias illo!</p>
+        <h1>wellcome to my DOM</h1>
         <ul>
             <li>Shafayat </li>
             <li>Bonobash</li>
             <li>Jalali Set</li>
+            <li>DOM de re baba</li>
         </ul>
 
     </main>
     <script>
-        console.log('this is my js')
-        console.log('hello bole chole gelo')
+        // console.log('this is my js')
+        // console.log('hello bole chole gelo')
+        // console.log('Document object model')
+        const student = {
+            name: 'Bokkor mia',
+            id: 121,
+            study: function (subject){
+                console.log('studying subject')
+            }
+        }
+        // document.getElementsByTagName()
+
+        const liCollection = document.getElementsByTagName('li');
+        console.log(liCollection)
+        for(const li of liCollection){
+            console.log(li.innerText)
+        }
+
+        const allHeadings = document.getElementsByTagName('h1');
+        for (const heading of allHeadings){
+            console.log(heading.innerText)
+        }
+         const getParagraphs = document.getElementsByTagName('p');
+         for(const paragraph of getParagraphs){
+            console.log(paragraph.innerText)
+         }
+
     </script>
     <script src="./js/hello.js"></script>
 </body>
